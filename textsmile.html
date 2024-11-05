@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clinic</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        .image-container {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+            height: auto; 
+            text-align: left;
+        }
+        
+        .background-image {
+            display: inline-block;
+            width: 700px;
+            height:500px;
+            margin-right: 15px; 
+            
+         }
+      /*rgb(6, 145, 214),rgb(6, 145, 214))*/
+      /*  rgb(11, 88, 172) , rgb(11, 88, 172)*/
+        
+        .gradient-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 99%;
+            background: linear-gradient(to right,rgba(255, 255, 255,.0),rgba(255, 255, 255,.0),
+            rgb(6, 145, 214),rgb(6, 145, 214))
+          
+         
+            ;
+            
+            
+        }
+        /*paragraph*/
+        .text {
+            display: inline-block;
+            vertical-align: top; /* Aligns text to the top of the image */
+            max-width: 500px; /* Limits the width of the text block */
+            line-height: 1.6;
+            position: absolute; 
+            top: 50px;
+            left: 750px;
+            
+            color:white;
+            font-size: 32px;
+            font-weight: bolder;
+            text-transform: capitalize;
+            
+            /* Adjusts the line height for readability */
+        }
+        .text2{
+            display: inline-block;
+            max-width: 500px; /* Limits the width of the text block */
+            line-height: 1.6;
+            position: absolute; 
+            top: 200px;
+            left: 750px;
+            color:white
+        }
+        /*nav */
+        .nav{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            background: rgba(0, 0, 0, .1); /* Semi-transparent background */
+            color: white;
+            padding: 5px 5px;
+        }
+        .nav ul{
+            float: right;
+            margin-right: 120px;
+        }
+        .nav ul li{
+            display: inline-block;
+           
+        }
+        .nav a{
+            text-decoration: none;
+            color:white;
+            text-transform: capitalize;
+            padding-left: 10px;
+
+
+        }
+        /*logo*/
+        .navbar-logo {
+            float: left;
+        }
+        
+        .logo {
+           height: 50px;
+            width: auto;
+            margin-left:50px;
+            
+        
+              
+        }
+        /*button*/
+        .button{
+            position: absolute;
+            top:400px;
+            right: 520px;
+            color:white;
+            
+            text-decoration: none;
+            text-transform: capitalize;
+            padding:10px 30px 10px 30px;
+         
+            background-color: rgb(2, 23, 46);
+            border-radius: 10px;
+        }
+     
+        
+    </style>
+</head>
+<body>
+    
+
+    
+    <div class="image-container">
+        <img src="imge/smile.jpg" alt="Sample Image" class="background-image">
+        <div class="gradient-overlay"></div>
+        <div class="nav">
+            <div class="navbar-logo">
+                <a href="#"><img src="imge/result (2).png" class="logo"></a>
+                
+                
+            </div>
+           
+            <ul>
+               
+                <li><a href="#">home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">services</a></li>
+                <li><a href="#">our team</a></li>
+                <li><a href="#">contact us</a></li>
+                <li><a href="#">login</a></li>
+                <li><a href="#" style="color:rgb(36, 35, 35)">signup</a></li>
+
+            </ul>
+        </div>
+        
+        
+        <p class="text">
+          a better life satrts with a beautiful smile
+        </p>
+        <p class="text2">Lorem ipsum dolor sit amet consectetur adipisicing elit. A exercitationem saepe qui veniam, dignissimos vel rem non at amet consectetur maiores rerum iure sint repellat ut sunt hic tempore consequuntur?</p>
+        <a class="button" href="#">book</a>
+
+    </div>
+</body>
+</html>

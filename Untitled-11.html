@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Guess the Emoji</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    /* Add some basic styles */
+    body {
+      background-color: #f4f4f4;
+      background-image: url("img/img2bg.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      text-transform: capitalize;
+    }
+    .container-fluid {
+      
+      padding: 20px;
+    }
+    .emoji-button img {
+      width: 50px;
+      height: 50px;
+    }
+    .guess-table {
+      text-align: center;
+    }
+    #d1 {
+      width: 150px;
+      height: 150px;
+      margin-top: 20px;
+    }
+    /* Custom styles for columns */
+    .custom-col {
+      padding: 20px;
+      background-color: goldenrod;
+      opacity: 0.8;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+     
+    }
+    .custom-col h1 {
+ 
+      margin-bottom: 10px;
+      color:black;
+      font-size: 30px;
+      font-weight: bold;
+      
+    }
+    .bg1{
+  
+       margin-top: 20px;
+       opacity:1;
+       width:200px;
+       border-radius: 10px;
+       box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+    }
+    p{
+        margin-top: 5px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+   
+  </style>
+</head>
+<body>
+
+<div class="container-fluid text-black text-center bg1 ">
+  <h1>Guess the Emoji</h1>
+  <p>Let's play ....</p> 
+</div>
+
+<div class="container mt-5">
+  <div class="row">
+    <!-- First Column: Buttons Table -->
+    <div class="col-md-6 custom-col">
+      <h1 class="text-center">Select an Emoji</h1>
+      <div class="row">
+        <div class="col-md-4 emoji-button">
+          <button class="btn" id="btn1" onclick="document.getElementById('img1').src='img/heart_eyes.png';document.getElementById('d1').src='img/heart_eyes.png';">
+            <img src="img/guess.png" id="img1">
+          </button>
+        </div>
+        <div class="col-md-4 emoji-button">
+          <button class="btn" id="btn2" onclick="document.getElementById('img2').src='img/wink.png';document.getElementById('d1').src='img/wink.png';">
+            <img src="img/guess.png" id="img2">
+          </button>
+        </div>
+        <div class="col-md-4 emoji-button">
+          <button class="btn" id="btn3" onclick="document.getElementById('img3').src='img/joy.png';document.getElementById('d1').src='img/joy.png';">
+            <img src="img/guess.png" id="img3">
+          </button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 emoji-button">
+          <button class="btn" id="btn4" onclick="document.getElementById('img4').src='img/hugging_face.png';document.getElementById('d1').src='img/hugging_face.png';">
+            <img src="img/guess.png" id="img4">
+          </button>
+        </div>
+        <div class="col-md-4 emoji-button">
+          <button class="btn" id="btn5" onclick="document.getElementById('img5').src='img/sunglasses.png';document.getElementById('d1').src='img/sunglasses.png';">
+            <img src="img/guess.png" id="img5">
+          </button>
+        </div>
+        <div class="col-md-4 emoji-button">
+          <button class="btn" id="btn6" onclick="document.getElementById('img6').src='img/stuck_out_tongue_winking_eye.png';document.getElementById('d1').src='img/stuck_out_tongue_winking_eye.png';">
+            <img src="img/guess.png" id="img6">
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Second Column: Display Guess -->
+    <div class="col-md-6 custom-col text-center div2 ">
+      <h1>Look, your guess is:</h1>
+      <div>
+        <img class="animate__animated animate__pulse animate__infinite	infinite" id="d1" src="img/output-onlinepngtools.png">
+      </div>
+    </div>
+  </div>
+</div>
+<p class="text-black text-center">done by &copy; : yomna rabea</p>
+
+</body>
+</html>

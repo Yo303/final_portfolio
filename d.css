@@ -1,0 +1,243 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+.nav {
+    display: flex;
+    background-color: white;
+    justify-content: start;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.nav img {
+    width: 130px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+.nav ul {
+    list-style: none;
+    padding: 0;
+}
+.nav ul li {
+    display: inline-block;
+    margin-left: 30px;
+}
+.nav a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: black;
+    font-size: 25px;
+    font-weight: bolder;
+    margin-right: 15px;
+}
+/*buttons nav*/
+.nav .btn1 {
+    background-color: rgb(0, 47, 255);
+    border: 2px solid black;
+    border-radius: 10px;
+    width:250px;
+    height:30px;
+    margin-top: 10px;
+    padding:5px 5px;
+    
+
+
+    
+}
+.nav #btn1{
+    
+    margin-left: 200px;
+    margin-right: 5px;
+    width:300px;
+   
+}
+
+.nav .btn1 a{
+    color:white;
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 50px;
+    padding-left: 25px;
+  
+}
+.nav .btn1:hover {
+    background-color: white;
+    
+    
+}
+
+.nav .btn1 a:hover{
+    color:rgb(0, 47, 255);
+   
+}
+
+
+
+
+/* Media query */
+.containervid {
+    position: relative;
+}
+.linkbtnvid {
+    position: absolute;
+    top: 85%;
+    left: 43%;
+}
+.linkbtnvid a {
+    background-color: rgb(0, 47, 255);
+    font-size: 25px;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px 30px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+.linkbtnvid a:hover {
+    background-color: white;
+    color: darkblue;
+}
+
+/* Gallery */
+.gallery {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    background-color: rgb(1, 1, 85);
+    margin-top: -5px;
+    flex-wrap: wrap;
+}
+.gallery img {
+    width: 250px;
+    height: auto; /* Adjusted for responsiveness */
+    margin-left: 50px;
+    margin-bottom: 150px;
+}
+.gallery img:hover {
+    transform: scale(1.1);
+}
+.lastcontent1{
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+}
+.lastcontent1 p {
+    font-size: 30px;
+    text-transform: capitalize;
+    color: black;
+    text-decoration: underline;
+}
+
+/* Last content */
+.lastcontent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 80px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    display: inline-block;
+}
+
+.lastcontent img {
+    display: block; /* Remove bottom space/gap */
+    width: 600px; /* Ensure the image scales */
+    height: auto;
+   /* Maintain aspect ratio */ 
+}
+.textimg {
+    position: absolute;
+
+    top: 0; /* Align text to the bottom of the container */
+    left: 50%; /* Center text horizontally */
+    transform: translateX(50%,0); /* Offset text by half of its width */
+    color: white; /* Text color */
+    font-size: 24px; /* Adjust font size */
+    padding: 5px; /* Optional padding for better readability */
+  /* Optional background for contrast */
+    width: 46%; /* Optional: make the text container span the width of the image */
+    text-align: center; /* Center text horizontally within its container */
+}
+.textimg img {
+    margin-top: 10px;
+    width: 300px;
+    /* Adjusted for responsiveness */
+}
+.textimg p {
+    color:black;
+  
+    font-size: 24px;
+    text-decoration: none;
+}
+.lastcontent :hover{
+    opacity: .9;
+}
+
+/* Footer */
+.footer {
+   margin-right: 300px;
+    margin-top: 100px;
+}
+.footer p {
+    padding-left: 35%;
+    font-size: 25px;
+    text-transform: capitalize;
+    color: black;
+    text-align: center;
+}
+@media (max-width:641px)  {
+    .nav img{
+        width:70px
+    }
+    .nav .btn1 a {
+        font-size: 16px;
+    
+    }
+    
+    .linkbtnvid {
+     
+       
+        left: 30%;
+    }
+    .lastcontent img {
+        width:400px;
+        height: auto;
+        
+    }
+    .textimg{
+       
+        padding: 5px; /* Optional padding for better readability */
+        background-color: rgba(0, 0, 0, 0.0); /* Optional background for contrast */
+        width: 50%; /* Optional: make the text container span the width of the image */
+        text-align: center; /* Center text horizontally within its container */
+        /* Adjusted for responsiveness */
+    }
+    .textimg img {
+        margin-top: 0px;
+        width: 190px;
+        /* Adjusted for responsiveness */
+    }
+    .textimg p {
+        color:white;
+      
+        font-size: 20px;
+        text-decoration: none;
+    }
+    .footer p {
+        
+   
+        font-size: 15px;
+        color:black;
+        
+       
+    }
+    .footer{
+        margin-right:60px;
+        margin-top: 100px;
+    }
+   
+
+    
+}
